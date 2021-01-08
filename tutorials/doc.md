@@ -33,9 +33,8 @@ ROS包支持的环境版本：
     git clone https://gitee.com/HANDS-FREE/handsfree_ros_imu.git
     cd ~/handsfree/handsfree_ros_ws/
     catkin_make
-
     cd ~/handsfree/handsfree_ros_ws/src/handsfree_ros_imu/scripts/
-　　　　sudo chmod 777 *.py
+    sudo chmod 777 *.py
     ```
 
 3. 将 setup.sh 写入 .bashrc 文件中 
