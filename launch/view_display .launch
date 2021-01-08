@@ -1,0 +1,7 @@
+<!--单独打开 3d 模型-->
+
+<launch>
+    <!-- 打开 3d 模型 -->
+    <node pkg="handsfree_ros_imu" type="display_3D_visualization.pyc" name="display_3D_visualization_node" output="screen">
+    </node>
+</launch>  

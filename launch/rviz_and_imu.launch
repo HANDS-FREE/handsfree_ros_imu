@@ -1,0 +1,16 @@
+<!--imu 和 rviz 同时打开-->
+
+<launch>
+
+    <!-- imu型号，默认 a9 -->
+    <arg name="imu_type" default="a9" doc="model type [a9, b9, b6 ,d6]"/>
+
+    <!-- imu 对应 python 文件 -->
+    <node pkg="handsfree_ros_imu" type="hfi_$(arg imu_type)_ros.py" name="imu" output="screen">
+    </node>
+
+    <!-- 加载 rviz -->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find handsfree_ros_imu)/rviz/handsfree_ros_imu.rviz">
+    </node>
+
+</launch>   
