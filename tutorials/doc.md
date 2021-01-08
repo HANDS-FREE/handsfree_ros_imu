@@ -2,6 +2,12 @@
 
 ## 在 ROS 环境下使用 IMU
 
+ROS包支持的环境版本：
+* ubuntu 16.04, ROS kinetic
+* ubuntu 18.04, ROS Melodic
+
+如果使用其它ROS版本，请用户自己探索安装相关环境。
+
 ### 安装 ROS 依赖包
 
 1. 安装 ros imu　功能依赖包
@@ -27,6 +33,9 @@
     git clone https://gitee.com/HANDS-FREE/handsfree_ros_imu.git
     cd ~/handsfree/handsfree_ros_ws/
     catkin_make
+
+    cd ~/handsfree/handsfree_ros_ws/src/handsfree_ros_imu/scripts/
+　　　　sudo chmod 777 *.py
     ```
 
 3. 将 setup.sh 写入 .bashrc 文件中 
