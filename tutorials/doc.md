@@ -5,6 +5,7 @@
 ROS包支持的环境版本：
 * ubuntu 16.04, ROS kinetic
 * ubuntu 18.04, ROS Melodic
+* ubuntu 20.04, ROS Noetic
 
 如果使用其它ROS版本，请用户自己探索安装相关环境。
 
@@ -22,7 +23,13 @@ ROS包支持的环境版本：
     如果你使用的是 ubuntu 18.04, ROS Melodic:
 
     ```
-    sudo apt-get install ros-Melodic-imu-tools ros-Melodic-rviz-imu-plugin
+    sudo apt-get install ros-melodic-imu-tools ros-melodic-rviz-imu-plugin
+    ```
+
+    如果你使用的是 ubuntu 20.04, ROS Noetic:
+
+    ```
+    sudo apt-get install ros-noetic-imu-tools ros-noetic-rviz-imu-plugin
     ```
 
 2. 下载并编译 handsfree_ros_imu 驱动包，如果没有安装 git 工具，请使用 `sudo apt-get install -y git`命令，通过终端安装。
@@ -134,6 +141,11 @@ ROS包支持的环境版本：
     ![](./img/doc/com3.jpg)    
 
 6. 进入 `/handsfree_ros_imu/demo/windows`下，修改对应　python　驱动程序文件的　COM3　为你电脑上对应的　COM　口，然后双击对应的　python　程序文件来运行脚本或者用命令行运行。
+
+## 其他
+通过 python3 ，或 ROS Noetic 使用请将 master 分支切换到 noetic 分支，下载使用
+
+![](./img/doc/git_branch.jpg)    
 
 ## 主要文件介绍
 
